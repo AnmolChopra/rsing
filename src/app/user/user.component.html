@@ -1,0 +1,28 @@
+<div class="body">
+  <div class="logo">
+      <h1>Rising India </h1>
+      <!-- <div class="notice">
+          <h2>Important Notice</h2>
+          <marquee behavior="" direction="left">Abfgddghf</marquee>
+      </div> -->
+      <!-- <h2 class="name">{{name || 0}}</h2> -->
+  </div>
+  <div class="menu">
+          
+      <ul>
+              <h2 class="name">{{name || 0}}</h2>
+          <li><a routerLink="dashboard">Dashboard</a></li>
+          <li><a routerLink="add-Member">Add Member</a></li>
+          <li><a routerLink="my-Direct">My Direct</a></li>
+          <li><a routerLink="my-Team">My Team</a></li>
+          <li><a routerLink="">Send Free Link</a></li>
+          <li><a routerLink="">Payment History</a></li>
+          <li><a routerLink="">Income</a></li>
+          <li><a routerLink="">Wallet</a></li>
+          <li><a routerLink="">Member Profile</a></li>
+          <li><i class="fas fa-band-aid"></i><a (click)='signOut()'>Sign Out</a></li>
+          
+      </ul>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,36 @@
+.body{
+    position: absolute;
+    margin-top: 3.6%;
+    margin-left: 221px;
+    padding-left: 7%;
+    padding-right: 5%;
+    width: 75%;
+    height: 90%;
+    background-color: #ECF0F5;
+}
+.head{
+    font-size: 20px;
+}
+table{
+    border-bottom: 1px solid black;
+}
+.tablef{
+    padding: 3%;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    width: 90%;
+    height: 65%;
+}
+.tableHead{
+    font-size: 20px;
+    margin: 50px;
+    background-color: #2C3B41;
+    color: white;
+    font-weight: 100;
+}
+.tableHead th{
+    width: 180px;
+}
+.tablec{
+    background-color: whitesmoke;
+}

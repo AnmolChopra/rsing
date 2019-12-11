@@ -1,0 +1,53 @@
+<div class="body">
+  <div class="head">
+      <h1>Join Member</h1>
+  </div>
+  <div class="form">
+      <form [formGroup]="detail" (ngSubmit)='members()'>
+          <div *ngIf='plInfo==true'>
+              <h3>Personal Information</h3>
+              <input type="text" placeholder="Enter Your Full Name" formControlName='name'> <br>
+              <input type="tel" placeholder="Enter Your Mobile No." formControlName='mobile'> <br>
+              <input type="text"  placeholder="Enter Your Email Id" formControlName='email'> <br>
+              <input type="text"  placeholder="Enter Your Password" formControlName='password'> <br>
+              <input type="text" placeholder="Re-enter Your Password"> <br>
+              <button (click)='comm()'>Next</button>
+          </div>
+          <div *ngIf="comminfo == true">
+              <div>
+                  <h3>Communication Information</h3>
+                  <input type="text" placeholder="Enter your Address" formControlName='addresss'> <br>
+                  <input type="text" placeholder="Your City" formControlName='city'> <br>
+                  <input type="text" placeholder="Your State" formControlName='state'> <br>
+                  <input type="text" placeholder="Your Pincode" formControlName='pincode'>
+              </div>
+              <div>
+                  <h3>Sponser Information</h3>
+                  <label for="">Sponser's User Id</label>
+                  <input type="text" disabled formControlName='sponserId'> 
+                  <label for="">Sponer Name</label>
+                  <input type="text" disabled formControlName='sponserName'>
+              </div>
+              <button (click)='backf()'>Back</button>
+              <button (click)='legal()'>Next</button>
+          </div>
+          <div *ngIf='legalinfo==true'>
+              <h3>Legal Details</h3>
+              <input type="text"  placeholder="Enter Your Aadhar No." formControlName='aadhar'> <br>
+              <input type="text" placeholder="Enter Your PAN  No." formControlName='pan'> <br>
+              <button (click)='backf()'>Back</button>
+              <button (click)='acc()'>Next</button>
+          </div>
+          <div *ngIf='accinfo==true'>
+              <h3>Account Details</h3>
+              <input type="text" placeholder="Enter Account Holder Name" formControlName='accName'> <br>
+              <span>* Account Name Should be same to your full Name</span> <br>
+              <input type="tel" placeholder="Enter Your Account No." formControlName='accNo'> <br>
+              <input type="tel" placeholder="Re-enter Your Account No."> <br>
+              <input type="tel" placeholder="Enter IFSC Code" formControlName='ifsc'> <br>
+              <button (click)='backf()'>Back</button>
+              <button  type="submit">Submit</button>
+          </div>
+      </form>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px;
+
+    padding: 0px;
+    overflow: hidden;
+}
+footer{
+    background-color: #dddddd;
+    margin-top: 43.8%;
+    position: fixed;
+    padding-top: 5px;
+    padding-left: 20%;
+    height: 25px;
+    width: 100%;
+    font-size: 18px;
+}
