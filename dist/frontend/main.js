@@ -947,7 +947,7 @@ __webpack_require__.r(__webpack_exports__);
 var BakendService = /** @class */ (function () {
     function BakendService(http) {
         this.http = http;
-        this.Url = "http://18.216.224.134:1234/";
+        this.Url = "http://18.216.224.134/";
     }
     // login
     BakendService.prototype.login = function (data) {
