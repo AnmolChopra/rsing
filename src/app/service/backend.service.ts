@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class BakendService {
-Url="http://18.216.224.134/"
+Url="http://103.129.98.168:1234/"
   constructor(private http:HttpClient) { }
 
   // login
